@@ -310,6 +310,20 @@ Suggested Codex prompts:
 
 ## Verification
 
+### Automated regression tests
+
+After installing the project dependencies, run:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The tests cover status filtering, case-insensitive substring search across title
+and description, combined filters, and persisted completion timestamps. They use
+temporary JSON storage and leave `data/tasks.json` unchanged.
+
+### API verification
+
 Use the commands below after you finish the lab, or ask Codex to run them and summarize the results.
 
 Suggested verification prompt:
